@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="hyy">
+        <div class="calculator">
+          <div class="display">
+            <input type="text" id="displayvalue" readonly/>
+          </div>
+          <div class="buttons">
+            <button class="button-iconsd" value="C" onclick="clearscr()">C</button>
+            <button class="button-icons" value="/" onclick="display('/')">/</button>
+            <button class="button-icons" value="*" onclick="display('*')">X</button>
+          </div>
+          <div class="button2">
+            <button class="button-icons" value="7" onclick="display('7')">7</button>
+            <button class="button-icons" value="8" onclick="display('8')">8</button>
+            <button class="button-icons" value="9" onclick="display('9')">9</button>
+            <button class="button-icons" value="-" onclick="display('-')">-</button>
+          </div>
+          <div class="button3">
+            <button class="button-icons" value="4" onclick="display('4')">4</button>
+            <button class="button-icons" value="5" onclick="display('5')">5</button>
+            <button class="button-icons" value="6" onclick="display('6')">6</button>
+            <button class="button-icons" value="+" onclick="display('+')">+</button>
+          </div>
+          <div class="button4">
+            <button class="button-icons" value="1" onclick="display('1')">1</button>
+            <button class="button-icons" value="2" onclick="display('2')">2</button>
+            <button class="button-icons" value="3" onclick="display('3')">3</button>
+          </div>
+          <div class="button5">
+            <button class="button-icons" value="0" onclick="display('0')">0</button>
+            <button class="button-icons" value="." onclick="display('.')">.</button>
+            <button class="button-icons text"  onclick="deleteDigit()">DEL</button>
+          </div>
+          <div class="buttoneq">
+            <button class="eq" value="=" onclick="calculate()">=</button>
+          </div>
+        </div>
+        
+      </div>
+    </header>
+    <script src="script.js"></script>
+  </body>
+</html>
